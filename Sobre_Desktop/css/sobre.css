@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.tittopicos{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #262626;
+    line-height: 62.5px
+}
+
+.stittopicos{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #262626;
+}
+
+.destacada{
+    position: relative;
+}
+
+.destacada::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 5px;
+    background-color: #F97B22;
+}
+
+.imgtopicos{
+    width: 2000px;
+    height: 250px;
+    overflow: hidden;   
+}
+
+.imgtopicos .ftopicos{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35px;
+}
+
+.txttopicos{
+    margin: 0 40px 0 40px;
+}
+
+.topicos{
+    display: flex;
+    margin: 50px 98px 50px 71px;
+}
+
+#principal{
+    background-image: url(../imgs/Foto03.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    color: #F1F1F1;
+    padding: 110px 0 162px 84px;
+    border-radius: 35px;
+    margin: 80px 96px 130px 71px;
+}
+
+#principal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+    border-radius: 35px;
+    z-index: 1;
+}
+
+#tprincipal, #stprincipal, #btnNossaEquipe, .btnNossaEquipe{
+    position: relative;
+    z-index: 2;
+    color: #F1F1F1;
+}
+
+#txtprincipal, #stxtprincipal{
+    color: #F1F1F1;
+    position: relative;
+    z-index: 2;
+}
+
+#txtprincipal{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: -2%;
+    margin: 0 300px 0 0;
+}
+
+#stxtprincipal{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+    margin: 15px 490px 20px 0;
+}
+
+.btnNossaEquipe{
+    width: 184.35px;
+    height: 40px;
+    border-radius: 80px;
+    background-color: #F97B22;
+    border: 1px solid #F97B22;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.075em;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 7px 0 7px;
+    margin-bottom: 162px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.arrowbtn{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    opacity: 0px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 7px;
+}
+
+.arrow{
+    width: 14px;
+    height: 9px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.equipe {
+    background-color: #F97B22;
+    height: 803px;
+    border-radius: 300px 300px 0 0;
+    padding-top: 60px;
+}
+
+.titulo h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 73.14px;
+}
+
+.titulo p {
+    margin-bottom: 5px;
+    font-family: 'Montserrat';
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+}
+
+.titulo{
+    margin: 0 230px 90px 230px;
+    text-align: center;
+}
+
+.professores{
+    height: 344px;
+    border-radius: 20px 20px 0px 0px;
+    margin: 0 65px 105px 65px;
+    display: flex;
+    align-items: center;
+}
+
+.membro {
+    width: 290px;
+    height: 344px;
+    border-radius: 20px 20px 0px 0px;
+    margin: 10px;
+}
+
+.imgperfil {
+    width: 290px;
+    height: 207.51px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.perfil {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.nome{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: white;
+    width: 290px;
+    height: 22px;
+    margin: 15.49px 0 5px 0;
+}
+
+.formacao{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: white;
+    width: 290px;
+    height: 20px;
+    margin-bottom: 30px;
+}
+
+.descricao{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: white;
+    width: 290px;
+    height: 44px;
+}
+.textos{
+    width: 290px;
+    height: 137.49px
+}
