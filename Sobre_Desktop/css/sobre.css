@@ -255,3 +255,13 @@ a{
     width: 290px;
     height: 137.49px
 }
+@media screen and (max-width:1298px){
+    .professores{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .equipe{
+        height: 1200px;
+        max-width: 1298px;
+    }
+}
