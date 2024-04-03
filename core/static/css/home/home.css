@@ -757,11 +757,47 @@ header{
 .setaCarrosselMobile{
     display: none;
 }
+/*Responsivo */
 
+@media only screen and (max-width: 1300px) {
+    .cardAluno{
+        width: 300px;
+        height: 400;
+    }
+
+    .dadosPessoais{
+        width: 300px;
+    }
+
+    #cabeçalhoQuemfoiAluno{
+        margin-left: 410px;
+    }
+    .nossaHistoriaDescricao{
+        width: 460px;
+    }
+
+    .cardCurso{
+        margin-left: 60px;
+    }
+
+    .descricaoAluno{
+        width: 280px;
+        font-size: 13px;
+    }
+}
 
 /*Responsividade Mobile*/
 
 @media only screen and (max-width: 768px) {
+
+    .geral{
+        width: 100vw;
+    }
+
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
 
     header{
         width: 204px;
