@@ -1,0 +1,1278 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Footer CSS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.footer{
+    box-sizing: border-box;
+    letter-spacing: 1%;
+    width: 100%;
+    background-color: #F97B22;
+    font-family: 'Montserrat';
+    padding: 38px 135px 33px 135px;
+    border: 2px solid #F97B22;
+}
+
+.footerLogo{
+    overflow: hidden;
+    width: 216px;
+    height: 82px;
+}
+
+.footerLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blocoFooter{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer_contatos .FAQ .centralAjuda{
+    margin-bottom: 13px;
+}
+
+.footer_contatos li, .FAQ li, .centralAjuda li{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #262626;
+}
+
+.primeiro{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.footer_contatos li{
+    margin-bottom: 13px;
+}
+
+.redesSociais{
+    display: flex;
+    gap: 1.5rem;
+    margin: 2px 0 24px 0;
+}
+
+.FAQ li, .centralAjuda li{
+    margin-bottom: 13px;
+}
+
+.copyright{
+    margin-left: 40px;
+    color: #262626;
+}
+/*Fim do CSS Footer*/
+
+
+/*Nav bar CSS*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: #262626;
+    padding: 0 20px;
+    overflow-x: auto;
+}
+
+.logo img {
+    height: 150px;
+}
+
+.separator {
+    height: 40px;
+    border-right: 3px solid #262626;
+    margin-right: 20px;
+    transform: translateX(-330px);
+}
+
+.nav-links {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    letter-spacing: 0.075em;
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transform: translateX(-650px);
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    color: #262626;
+    text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+    .navbar{
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .separator{
+        transform: translateX(0px);
+    }
+
+    .nav-links{
+        transform: translateX(0px);
+    }
+}
+/*fim nav bar css*/
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+header{
+    width: 1382px;
+    height: 100px;
+    left: 29px;    
+    background-color: black;
+    
+}
+
+.painelFotosInicial{
+    width: 585px;
+    height: 1304px;
+    margin-top: -795px;
+    margin-left: 780px;
+    transform: translateY(280px);
+}
+
+.headlineHome{
+    width: 696px;
+    height: 314.39px;
+    margin-top: 60px;
+    margin-left: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.descricao1{
+    width: 650px;
+    height: 135px;
+    font-family: DM Sans;
+    font-size: 4.29vw;
+    font-weight: 700;
+    line-height:  11.61vh;
+    letter-spacing: 1.5px;
+    text-align: left;
+    margin-bottom: 5%;
+
+}
+
+.descricao2{
+    width: 597px;
+    height: 76px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: left;
+    margin-bottom: 6%;
+    
+}
+
+.sublinhado{
+    text-decoration: underline 3px solid #F97B22;
+    width: 120px;
+    height: 0px;
+    font-family: DM Sans;
+    font-size: 4.29vw;
+    font-weight: 700;
+    line-height: 11.61vh;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+.trocacor{
+    font-family: DM Sans;
+    font-size: 4.29vw;
+    font-weight: 700;
+    line-height: 11.61vh;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #F97B22;
+}
+
+.explorarCursos{
+    display: flex;
+    width: 336px;
+    height: 63.39px;
+
+}
+
+.btnExplorarCursos{
+    width: 226px;
+    height: 46px;
+    border-radius: 80px;
+    border: 1px solid #F97B22;
+    background-color: white;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.83px;
+    letter-spacing: 0.075em;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.arrowbtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    opacity: 0px;
+    background-color: #F97B22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: -3px;
+
+}
+
+.arrow{
+    width: 14px;
+    height: 9px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.miniaturaAlunos{
+    width: 105px;
+    height: 63.39px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.imgAlunos{
+    display: flex;
+    width: 105px;
+    height: 44px;
+    align-items: center;
+
+}
+
+.alunosAgora{
+    width: 92.74px;
+    height: 17.39px;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 9.75px;
+    text-align: center;
+
+}
+
+.miniaturaAluno{
+    width: 44px;
+    height: 43px;
+
+}
+
+.miniaturaAluno2{
+    width: 45px;
+    height: 44px;
+    margin-left: -10px;
+}
+
+.somaIcon{
+    width: 12.75px;
+    height: 12.75px;
+    color: white;
+    background-color: #F97B22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -15px;
+    border-radius: 50%;
+    padding: 2px;
+
+}
+
+.iconesomaImg{
+    width: 12.75px;
+}
+
+.fileira{
+    margin-bottom: 30px;
+}
+
+.banner{
+    width: 21.87vw;
+    height: 66.56vh;
+    border-radius: 35px;
+    margin-right: 15px;
+    transform: translateY(-240px);
+}
+
+.banner2{
+    width: 21.87vw;
+    height: 66.56vh;
+    border-radius: 35px;
+    transform: translateY(-130px);
+}
+
+.bannerespecial{
+    width: 21.87vw;
+    height: 66.56vh;
+    border-radius: 35px;
+    margin-right: 15px;
+    transform: translateY(-240px);
+    object-fit: cover;
+}
+
+.bolaPontinhos{
+    width: 180px;
+    height: 180px;
+    z-index: -1;
+    transform: translateY(-390px);
+    margin-left: -50px;
+
+}
+
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding-top: 60px;
+    
+}
+
+#orange1{
+    transform: translateY(50px);
+    margin-left: 40px;
+    background-color: #F97B22;
+}
+
+#orange2{
+    display: block;
+    transform: translateY(-340px);
+    margin-left: 250px;
+    background-color: #F97B22;
+}
+
+#orange3{
+    transform: translateY(-60px);
+    margin-left: 350px;
+    background-color: #F97B22;
+}
+
+#bordercircle{
+    transform: translateY(-120px);
+    margin-left: 550px;
+    width: 50px;
+    height: 50px;
+    padding-top: 40px;
+    border: 7px solid black;
+}
+
+#bordercircle2{
+    margin-left: 550px;
+    width: 110px;
+    height: 110px;
+    padding-top: 110px;
+    border: 12px solid black;
+    margin-left: -140px;
+}
+
+#gray{
+    transform: translateX(-400px);
+    margin-left: 350px;
+    width: 35px;
+    height: 35px;
+    padding-top: 35px;
+    background-color: #262626;
+}
+
+#gray2{
+    transform: translateY(125px);
+    margin-left: 580px;
+    width: 35px;
+    height: 35px;
+    padding-top: 35px;
+    background-color: #262626;
+}
+
+
+
+/*Estilização da parte "Cursos mais Populares*/
+
+
+.cabeçalho{
+    width: 570px;
+    height: 41px;
+    font-family: DM Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: left;
+    margin-left: 72px;
+
+}
+
+.cursosPopulares{
+    width: 1256px;
+    height: 607px;
+
+}
+
+#cabeçalho{
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+.cards{
+    padding-top: 75px;
+    display: flex;
+}
+
+.cardCurso{
+    width: 352px;
+    height: 486px;
+    margin-left: 73px;
+    border-radius: 20px;
+}
+
+.cardupper{
+    width: 352px;
+    height: 273px;
+}
+
+.cardlower{
+    width: 352px;
+    height: 213px;
+}
+
+.cursosImg{
+    width: 352px;
+    height: 273px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cursoName{
+    width: 284px;
+    height: 32px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+
+}
+
+.estrelaImg{
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+}
+
+.notaAvaliação{
+    width: 26px;
+    height: 15px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+    text-align: left;
+    margin-left: 9px;
+    
+}
+
+.dadosgerais{
+    margin-bottom: 10px;
+}
+
+.dadosCargaHoraria{
+    width: 331px;
+    height: 24px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 10px;
+
+}
+
+.descricaoCurso{
+    width: 348px;
+    height: 54px;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.23px;
+    text-align: left;
+    color: #787878;
+}
+
+.verMais{
+    display: flex;
+    justify-content: space-between;
+}
+
+.preco{
+    width: 130px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.parcelado{
+    width: 125px;
+    height: 22px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    
+}
+
+.avista{
+    width: 94px;
+    height: 18px;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #787878;
+
+
+}
+
+.verMaisBtn{
+    width: 107px;
+    height: 40px;
+    padding: 12px 16px 12px 16px;
+    gap: 12px;
+    border-radius: 90px;
+    background-color: #F97B22;
+    border: none;
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+
+}
+
+/*Estilização da Parte "Nossa História"*/
+
+.carrossel{
+    width: 654.43px;
+    height: 297px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 35px;
+  }
+  
+  .nossaHistoriaSection{
+      width: 1256px;
+      height: 297px;
+      margin-left: 73px;
+      margin-top: 83px;
+      display: flex;
+  }
+  
+  .nossaHistoriaImg {
+    width: 654.43px;
+    height: 297px;
+    border-radius: 35px;
+    position: absolute;
+    transition: transform 0.5s ease;
+  }
+  
+  .nossaHistoriaTexto{
+      width: 568px;
+      height: 191px;
+  
+  }
+  
+  .nossaHistoriaDescricao{
+      width: 568px;
+      height: 104px;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: left;
+      margin-left: 72px;
+      margin-top: 30px;
+  }
+  
+
+/*Estilização da parte Quem foi aluno aprova*/
+
+.quemFoiAlunoAprovaSection{
+    width: 1814px;
+    height: 574px;
+    border-radius: 35px;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+#cabeçalhoQuemfoiAluno{
+    width: 586px;
+    height: 64px;
+    margin-left: 463px;
+
+}
+
+#spanQuemfoiAlunoaprova{
+    font-size: 48px;
+}
+
+.alunosCardsRow{
+    margin-top: 60px;
+    display: flex;
+    margin-left: -152px;
+}
+
+.cardAluno{
+    width: 350px;
+    height: 450px;
+    border-radius: 35px;
+    background-image: url(../../img/home/quemjafoialunoaprova/aluno1.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-right: 16px;
+}
+
+#aluno2{
+    background-image: url(../../img/home/quemjafoialunoaprova/aluno2.png);
+}
+
+#aluno3{
+    background-image: url(../../img/home/quemjafoialunoaprova/aluno3.png);
+}
+
+#aluno4{
+    background-image: url(../../img/home/quemjafoialunoaprova/aluno4.png);
+}
+
+#aluno5{
+    background-image: url(../../img/home/quemjafoialunoaprova/aluno5.png);
+}
+
+.dadosPessoais{
+    width: 350px;
+    height: 130px;
+    border-radius: 35px;
+    background-color: #F97B22;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nomeAluno{
+    width: 207px;
+    height: 22px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    margin-left: 23px;
+    margin-top: 17px;
+    
+}
+
+.cursoAno{
+    width: 280px;
+    height: 18px;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.23px;
+    text-align: left;
+    margin-left: 23px;
+    margin-top: 5px;
+
+
+}
+
+.descricaoAluno{
+    width: 305px;
+    height: 37px;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.23px;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 23px;
+
+}
+
+#bannerMobile2{
+    display: none;
+}
+
+.setaCarrosselMobile{
+    display: none;
+}
+
+
+/*Responsividade Mobile*/
+
+@media only screen and (max-width: 768px) {
+
+    header{
+        width: 204px;
+        height: 38px;
+        background-color: black;
+        
+    }
+
+    .headlineHome{
+        width: 296px;
+        height: 172.92px;
+        margin-left: 29px;
+
+    }
+    .descricao1{
+        width: 296px;
+        height: 58px;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.26px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        
+    }
+
+    .trocacor{
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.26px;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+
+    #sublinhadooff{
+        text-decoration: none;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.26px;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+
+    .bolaPontinhos{
+        display: none;
+    }
+
+    .circle{
+        display: none;
+    }
+    #fileira2{
+        display: none;
+    }
+    .painelFotosInicial{
+        margin: 0px;
+        transform: translateY(0px);
+        width: 504px;
+        height: 224px;
+        left: -72px;
+        margin-top: 120px;
+        margin-bottom: 60px;
+
+    }
+    .firstsectionMobile{
+        display: flex;
+        flex-direction: column;
+    }
+    #bannerMobile{
+        transform: translateY(0px);
+    }
+
+    #bannerMobile2{
+        display: block;
+        transform: translateY(0px);
+        margin-left: 15px;
+        object-fit: cover;
+    }
+
+    .descricao2{
+        width: 296px;
+        height: 40px;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+
+    }
+
+    .btnExplorarCursos{
+        width: 182.89px;
+        height: 32.93px;
+        border-radius: 35px;
+        border: 1px solid #F97B22;  
+        font-family: DM Sans;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 10px;
+        letter-spacing: 0.075em;
+        text-align: left;
+
+
+    }
+
+    .arrowbtn{
+        width: 27.74px;
+        height: 26.94px;
+        padding: 8px;
+        border-radius: 40px;
+
+    }
+
+    .miniaturaAlunos{
+        width: 56.51px;
+        height: 39.92px;
+        margin-left: 10px;
+    }
+
+    .imgAlunos{
+        width: 56.51px;
+        height: 22.95px;
+
+    }
+
+    .alunosAgora{
+        width: 49.32px;
+        height: 15.97px;
+        font-family: Satoshi;
+        font-size: 6px;
+        font-weight: 400;
+        line-height: 8px;
+        text-align: center;
+
+
+    }
+
+    .miniaturaAluno{
+        width: 24.22px;
+        height: 22.43px;
+
+    }
+
+    .miniaturaAluno2{
+        width: 24.22px;
+        height: 22.43px;
+
+    }
+
+    .somaIcon{
+        width: 6.86px;
+        height: 6.65px;
+        margin-left: -10px;
+    }
+
+    .iconesomaImg{
+        width: 3.63px;
+
+    }
+
+    .cards{
+        padding-top: 30px;
+    }
+
+    .fileira{
+        display: flex;
+        width: 504px;
+        height: 224px;
+        margin-left: -72px;
+    }
+    .banner{
+        width: 160px;
+        height: 209.54px;
+        border-radius: 35px;
+
+    }
+    .banner2{
+        width: 160px;
+        height: 209.54px;
+        border-radius: 35px;
+
+    }
+    .cursosPopulares{
+        width: 290px;
+        height: 418px;
+        left: 29px;
+
+    }
+
+    .setaCarrosselMobile{
+        display: block;
+        width: 25px;
+        height: 25px;
+        left: 46px;
+        background-color: #F97B22;
+        text-align: center;
+        border: none;
+        border-radius: 50%;
+        color: white;
+    }
+
+    #mobileNone{
+        display: none;
+    }
+
+    .cabeçalho{
+        width: 320px;
+        height: 41px;
+        margin-left: 29px;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 41px;
+        text-align: left;
+        
+    }
+
+    #cabeçalho{
+        width: 290px;
+        height: 41px;
+        left: 29px;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 41px;
+        text-align: left;
+        
+    }
+
+    .sublinhado{
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 41px;
+        text-align: left;
+    }
+
+    .cardCurso{
+        width: 255px;
+        height: 347px;
+        margin-left: 0px;
+
+    }
+
+    .cardupper{
+        width: 229px;
+        height: 167px;
+        margin-left: 59px;
+
+    }
+
+    .cursosImg{
+        width: 229px;
+        height: 167px;
+    }
+
+    .cardlower{
+        width: 229px;
+        height: 180px;
+        margin-left: 59px;
+    }
+
+    .dadosgerais{
+        display: flex;
+        align-items: center;
+        margin-bottom: 3px;
+    }
+
+    .cursoName{
+        width: 199px;
+        height: 28px;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 27.5px;
+        text-align: left;
+
+    }
+
+    .estrelaImg{
+        margin-left: 0px;
+    }
+
+    .notaAvaliação{
+        margin-left: 0px;
+    }
+
+    .dadosCargaHoraria{
+        width: 228px;
+        height: 16px;
+        font-family: Montserrat;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+
+    }
+
+    .descricaoCurso{
+        width: 229px;
+        height: 68px;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        margin-bottom: 20px;
+
+    }
+
+    .preco{
+        width: 118px;
+        height: 37px;
+
+    }
+
+    .parcelado{
+        width: 118px;
+        height: 19px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19px;
+        text-align: left;
+
+    }
+
+    .avista{
+        width: 100px;
+        height: 15px;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+        text-align: left;
+
+    }
+
+    .verMaisBtn{
+        width: 74px;
+        height: 29px;
+        padding: 8px 10px 8px 10px;
+        border-radius: 90px;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 16px;
+        text-align: center;
+
+    }
+
+    #setaCarrosselMobileEsquerda{
+        transform: translateY(120px);
+        margin-left: 45px;
+    }
+    #setaCarrosselMobileDireita{
+        transform: translateY(-252px);
+        margin-left: 275px;
+    }
+
+    /*Nossa Historia Mobile*/
+
+    .carrossel{
+        width: 302px;
+        height: 168px;
+        border-radius: 15px;
+    }
+
+    .nossaHistoriaSection{
+        width: 302px;
+        height: 312px;
+        left: 29px;
+        flex-direction: column;
+        margin-left: 29px;
+        margin-top: 180px;
+
+    }
+
+    .nossaHistoriaImg{
+        width: 302px;
+        height: 168px;
+        border-radius: 15px;
+
+    }
+
+    .nossaHistoriaDescricao{
+        width: 302px;
+        height: 68px;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .nossaHistoriaTexto{
+        margin-left: 0px;
+        margin-top: -30px;
+
+    }
+
+    #cabeçalhoNossaHistoriaMobile{
+        transform: translateY(-205px);
+        margin-left: 0px;
+    }
+
+    /*Quem foi aluno aprova MOBILE*/
+
+    .quemFoiAlunoAprovaSection{
+        width: 330px;
+        height: 241px;
+        margin-left: 15px;
+        margin-top: 50px;
+
+    }
+
+    #cabeçalhoQuemfoiAluno{
+        width: 317px;
+        height: 22px;
+        margin-left: 6px;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: center;
+
+        
+    }
+
+    #spanQuemfoiAlunoaprova{
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .cardAluno{
+        display: none;
+        width: 147px;
+        height: 189px;
+    }
+
+    #aluno2{
+        display: flex;
+        justify-content: end;
+
+
+    }
+    #aluno3{
+        display: flex;
+        justify-content: end;
+
+    }
+
+    .dadosPessoais{
+        width: 147px;
+        height: 61px;
+        border-radius: 10px 10px 15px 15px;
+
+    }
+
+    .nomeAluno{
+        width: 118px;
+        height: 17px;
+        font-family: DM Sans;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        text-align: left;
+        margin-top: 4px;
+        margin-left: 10px;
+
+    }
+
+    .cursoAno{
+        width: 120px;
+        height: 10px;
+        font-family: DM Sans;
+        font-size: 6px;
+        font-weight: 400;
+        line-height: 10px;
+        text-align: left;
+        margin-left: 10px;
+
+    }
+
+    .descricaoAluno{
+        width: 129px;
+        height: 20px;
+        font-family: DM Sans;
+        font-size: 7px;
+        font-weight: 400;
+        line-height: 10px;
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 3px;
+    }
+
+    .alunosCardsRow{
+        margin-left: 0px;
+        margin-left: -10px;
+    }
+    #setaCarrosselMobileEsquerda2{
+        transform: translateY(90px);
+        margin-right: -10px;
+    }
+    #setaCarrosselMobileDireita2{
+        transform: translateY(90px);
+        margin-left: -30px;
+    }
+}
