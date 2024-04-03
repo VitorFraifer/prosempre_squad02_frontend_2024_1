@@ -3,7 +3,7 @@
 .footer{
     box-sizing: border-box;
     letter-spacing: 1%;
-    width: 100%;
+    width: 100vw;
     background-color: #F97B22;
     font-family: 'Montserrat';
     padding: 38px 135px 33px 135px;
@@ -66,4 +66,141 @@
 .copyright{
     margin-left: 40px;
     color: #262626;
+}
+
+@media only screen and (max-width: 600px) {
+        /*Footer Mobile*/
+        .footer{
+            width: 360px;
+            height: 208px;
+            padding: 30px 23px 32px 29px;
+            margin-top: 300px;
+        }
+    
+        .footerLogo{
+            width: 80px;
+            height: 24px;
+    
+        }
+    
+        .footerLogo img{
+            width: 80px;
+            height: 24px;
+        }
+    
+        .blocoFooter{
+            width: 308px;
+            height: 90px;
+        }
+    
+        .footer_contatos{
+            width: 110px;
+            height: 71px;
+            padding: 5px 0px 5px 0px;
+            margin-right: 10px;
+    
+        }
+    
+        ul{
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 0px;
+        }
+    
+        .footer_contatos li{
+            width: 108px;
+            height: 10px;
+            font-family: DM Sans;
+            font-size: 8px;
+            font-weight: 400;
+            line-height: 10.42px;
+            text-align: left;
+            margin-bottom: 8px;
+    
+        }
+    
+        h3{
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-family: DM Sans;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 15.62px;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+    
+        .primeiro{
+            width: 102px;
+            height: 16px;
+            font-family: DM Sans;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15.62px;
+            text-align: left;
+    
+    
+        }
+    
+        .FAQ{
+            width: 68px;
+            height: 71px;
+            padding: 5px 0px 5px 0px;
+    
+        }
+    
+        .FAQ li{
+            width: 108px;
+            height: 10px;
+            font-family: DM Sans;
+            font-size: 8px;
+            font-weight: 400;
+            line-height: 10.42px;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+    
+        .centralAjuda{
+            width: 98px;
+            height: 71px;
+            padding: 5px 0px 5px 0px;
+    
+        }
+    
+        .centralAjuda li{
+            width: 108px;
+            height: 10px;
+            font-family: DM Sans;
+            font-size: 8px;
+            font-weight: 400;
+            line-height: 10.42px;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+    
+        .copyright{
+            display: none;
+        }
+    
+        .redesSociais{
+            width: 88.31px;
+            height: 13.5px;
+            margin: 0px;
+            gap: 12px;
+            transform: translateY(20px);
+        }
+    
+        .redesSociais img{
+            width: 13.08px;
+            height: 13.5px;
+            gap: 0px;
+            opacity: 0px;
+    
+        }
+    
+        /*Fim Footer Mobile*/
 }
