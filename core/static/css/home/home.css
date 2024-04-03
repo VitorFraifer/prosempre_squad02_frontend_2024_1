@@ -623,6 +623,24 @@ header{
     position: absolute;
     transition: transform 0.5s ease;
   }
+
+  .bolas {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.bolaH, .bolaV {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #E1E5EE;
+    margin: 0 5px;
+}
   
   .nossaHistoriaTexto{
       width: 568px;
@@ -1169,7 +1187,7 @@ header{
     .nossaHistoriaSection{
         width: 302px;
         height: 312px;
-        left: 29px;
+        margin-left: 0px;
         flex-direction: column;
         margin-left: 29px;
         margin-top: 180px;
@@ -1181,6 +1199,24 @@ header{
         height: 168px;
         border-radius: 15px;
 
+    }
+
+    .bolas {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+    
+    .bolaH, .bolaV {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: #E1E5EE;
+        margin: 0 3.75px;
     }
 
     .nossaHistoriaDescricao{
