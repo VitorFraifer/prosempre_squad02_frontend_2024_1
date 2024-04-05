@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../static/css/sobre/sobre.css">
-    <link rel="stylesheet" href="../../static/css/navbar.css">
-    <link rel="stylesheet" href="../../static/css/footer.css">
+    <link rel="stylesheet" href="../css/sobre.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <title>Sobre</title>
 </head>
 <body>
-
+<!-- NAVBAR -->
+<!-- <div class="navGrande">
     <nav class="navbar">
         <div class="logo">
-            <img src="../../static/img/sobre/logo01.png" alt="Logo Mani Cursos">
+            <img src="../imgs/Icons/Logo.png" alt="Logo Mani Cursos">
         </div>
         <div class="separator"></div>
         <ul class="nav-links">
@@ -23,11 +24,25 @@
             <li><a href="#">CONTATO</a></li>
         </ul>
     </nav>
+</div> -->
 
+<!-- FIM NAVBAR -->
+<div class="sobreGrande">
+<!-- NOSSA HISTÓRIA -->
     <div class="topicos">
         <div class="imgtopicos">
-            <img class="ftopicos" src="../../static/img/sobre/Foto01.png" alt="Mulheres rindo sentadas ao redor da mesa">
+            <div class="sliderSobre">
+                <img src="../imgs/Nossa_História/NH01.png" class="fNossaHistoria" alt="Slide 1">
+                <img src="../imgs/Nossa_História/NH02.jpg" class="fNossaHistoria" alt="Slide 2">
+                <img src="../imgs/Nossa_História/NH03.jpg" class="fNossaHistoria" alt="Slide 3">
+                <div class="bolas">
+                    <span class="bolaH"></span>
+                    <span class="bolaH"></span>
+                    <span class="bolaH"></span>
+                </div>
+            </div>
         </div>
+
         <div class="txttopicos">
             <h1 class="tittopicos">Nossa <span class="destacada">História</span></h1>
 
@@ -38,6 +53,10 @@
             </p>
         </div>
     </div>
+
+<!-- FIM NOSSA HISTÓRIA -->
+<!-- NOSSOS VALORES -->
+
     <div class="topicos">
         <div class="txttopicos">
             <h1 class="tittopicos">Nossos <span class="destacada">Valores</span></h1>
@@ -49,9 +68,22 @@
             </p>
         </div>
         <div class="imgtopicos">
-            <img class="ftopicos" src="../../static/img/sobre/Foto02.png" alt="Pessoas conversando ao redor de uma mesa">
+            <div class="sliderSobre">
+                <img src="../imgs/Nossos_Valores/NV01.png" class="fNossosValores" alt="Slide 1">
+                <img src="../imgs/Nossos_Valores/NV02.jpg" class="fNossosValores" alt="Slide 2">
+                <img src="../imgs/Nossos_Valores/NV03.jpg" class="fNossosValores" alt="Slide 3">
+                <div class="bolas">
+                    <span class="bolaV"></span>
+                    <span class="bolaV"></span>
+                    <span class="bolaV"></span>
+                </div>
+            </div>
         </div>
+        <script src="../js/SliderSobre.js"></script>
     </div>
+
+<!-- FIM NOSSOS VALORES -->
+<!-- PRINCIPAL -->
 
     <div id="principal">
         <div id="tprincipal">
@@ -69,6 +101,9 @@
         </button></a>
     </div>
 
+<!-- FIM PRINCIPAL -->
+<!-- NOSSA EQUIPE -->
+
     <div class="equipe" id="equipe">
         <div class="titulo">
             <h2>Nossa Equipe</h2>
@@ -79,7 +114,7 @@
         <div class="professores">
             <div class="membro">
                 <div class="imgperfil">
-                    <div class="perfil" style="background-image: url(../../static/img/sobre/professor01.png); background-position: center calc(70%);"></div>
+                    <div class="perfil" style="background-image: url(../imgs/Professores/professor01.png); background-position: center calc(70%);"></div>
                 </div>
                 <div class="textos">
                     <h3 class="nome">Giovane Amorim</h3>
@@ -90,7 +125,7 @@
             </div>
             <div class="membro">
                 <div class="imgperfil">
-                    <div class="perfil" style="background-image: url(../../static/img/sobre/professor02.png); background-position: center calc(30%);"></div>
+                    <div class="perfil" style="background-image: url(../imgs/Professores/professor02.png); background-position: center calc(30%);"></div>
                 </div>
                 <div class="textos">
                     <h3 class="nome">Cristina Siqueira</h3>
@@ -101,7 +136,7 @@
             </div>
             <div class="membro">
                 <div class="imgperfil">
-                    <div class="perfil" style="background-image: url(../../static/img/sobre/professor03.png); background-position: center calc(15%); width: 150%;"></div>
+                    <div class="perfil" style="background-image: url(../imgs/Professores/professor03.png); background-position: center calc(15%); width: 150%;"></div>
                 </div>
                 <div class="textos">
                     <h3 class="nome">Juliano Cavalanti</h3>
@@ -112,7 +147,7 @@
             </div>
             <div class="membro">
                 <div class="imgperfil">
-                    <div class="perfil" style="background-image: url(../../static/img/sobre/professor04.png); background-position: center calc(45%); width: 150%;"></div>
+                    <div class="perfil" style="background-image: url(../imgs/Professores/professor04.png); background-position: center calc(45%); width: 150%;"></div>
                 </div>
                 <div class="textos">
                     <h3 class="nome">Kiara Xiao</h3>
@@ -124,9 +159,122 @@
         </div>
     </div>
 
+<!-- FIM NOSSA EQUIPE -->
+</div>
+
+<div class="sobrePequena">
+    <!-- NOSSA HISTÓRIA -->
+    <div class="topicos">
+        <div class="txttopicos">
+            <h1 class="tittopicos">Nossa <span class="destacada">História</span></h1>
+        </div>
+        <div class="imgtopicos">
+            <div class="sliderSobre">
+                <img src="../imgs/Nossa_História/NH01.png" class="fNossaHistoria" alt="Slide 1">
+                <img src="../imgs/Nossa_História/NH02.jpg" class="fNossaHistoria" alt="Slide 2">
+                <img src="../imgs/Nossa_História/NH03.jpg" class="fNossaHistoria" alt="Slide 3">
+                <div class="bolas">
+                    <span class="bolaH"></span>
+                    <span class="bolaH"></span>
+                    <span class="bolaH"></span>
+                </div>
+            </div>
+        </div>
+        <script src="../js/Carrossel.js"></script>
+        
+        <div class="txttopicos">
+            <p class="stittopicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Duis aute irure dolor in reprehenderit in 
+                voluptate velit esse cillum dolore.
+            </p>
+        </div>
+    </div>
+
+<!-- NOSSOS VALORES -->
+    <div class="topicos">
+        <div class="txttopicos">
+            <h1 class="tittopicos">Nossos <span class="destacada">Valores</span></h1>
+        </div>
+        <div class="imgtopicos">
+            <div class="sliderSobre">
+                <img src="../imgs/Nossos_Valores/NV01.png" class="fNossosValores" alt="Slide 1">
+                <img src="../imgs/Nossos_Valores/NV02.jpg" class="fNossosValores" alt="Slide 2">
+                <img src="../imgs/Nossos_Valores/NV03.jpg" class="fNossosValores" alt="Slide 3">
+                <div class="bolas">
+                    <span class="bolaV"></span>
+                    <span class="bolaV"></span>
+                    <span class="bolaV"></span>
+                </div>
+            </div>
+        </div>
+        <script src="../js/SliderSobre.js"></script>
+        
+        <div class="txttopicos">
+            <p class="stittopicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore.
+            </p>
+        </div>
+    </div>
+
+<!-- PRINCIPAL -->
+    <div id="principal">
+        <div id="tprincipal">
+            <h1 id="txtprincipal"><span class="destacada">Os melhores</span> professores do mercado </h1>
+        </div>
+        <div id="stprincipal">  
+            <p id="stxtprincipal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Sapien, est felis, sagittis viverra nulla mattis scelerisque. Eget 
+            cras integer.</p>
+        </div>
+        <a href="#equipe"><button class="btnNossaEquipe" type="button" href="#equipe">
+            <div class="arrowbtn">
+                <label class="arrow">&rarr;</label>
+            </div>
+            NOSSA EQUIPE
+        </button>
+        </a>
+    </div>
+
+<!-- NOSSA EQUIPE -->
+    <div class="equipe" id="equipe">
+        <div class="titulo">
+            <h1>Nossa <span class="destacada">equipe</span></h1>
+        </div>
+        <div>
+            <!-- <div class="professores"> -->
+                <div class="membro">
+                    <div class="imgperfil">
+                        <div class="perfil" style="background-image: url(../imgs/Professores/professor02.png); background-position: center calc(30%);"></div>
+                    </div>
+                    <div class="textos">
+                        <h3 class="nome">Cristina Siqueira</h3>
+                        <p class="formacao">DOUTORA EM CONSTRUÇÕES SUSTENTÁVEIS</p>
+                        <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="membro">
+                    <div class="imgperfil">
+                        <div class="perfil" style="background-image: url(../imgs/Professores/professor03.png); background-position: center calc(15%); width: 150%;"></div>
+                    </div>
+                    <div class="textos">
+                        <h3 class="nome">Juliano Cavalanti</h3>
+                        <p class="formacao">DOUTOR EM FARMACOLOGIA MÉDICA</p>
+                        <p class="descricao">Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit. </p>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+</div>
+<!-- FOOTER -->
+
     <footer class="footer">
         <div class="footerLogo">
-            <img src="../../static/img/sobre/logo01.png" alt="Logo Mani Cursos">
+            <img src="../imgs/Icons/Logo.png" alt="Logo Mani Cursos">
         </div>
         <div class="blocoFooter">
             <div class="footer_contatos">
@@ -137,10 +285,10 @@
                     <li>23 Cornelia St, NY 10014, EUA</li>
                     <li>
                         <div class="redesSociais">
-                            <img src="../../static/img/sobre/Facebook.png" alt="facebook">
-                            <img src="../../static/img/sobre/Linkedin.png" alt="linkedin">
-                            <img src="../../static/img/sobre/Twitter.png" alt="twitter">
-                            <img src="../../static/img/sobre/Instagram.png" alt="instagram">
+                            <img src="../imgs/Icons/Facebook.png" alt="facebook">
+                            <img src="../imgs/Icons/Linkedin.png" alt="linkedin">
+                            <img src="../imgs/Icons/Twitter.png" alt="twitter">
+                            <img src="../imgs/Icons/Instagram.png" alt="instagram">
                         </div>
                     </li>
                 </ul>
@@ -170,5 +318,6 @@
             Copyright © 2023. All rights reserved.
         </div>
     </footer>
+<!-- FIM FOOTER -->
 </body>
 </html>
