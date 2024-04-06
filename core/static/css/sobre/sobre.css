@@ -6,7 +6,13 @@ body{
     padding: 0;
     margin: 0;
 }
-
+.sobreGrande{
+    display: block;
+}
+.sobrePequena{
+    display: none;
+}
+/* TÓPICOS */
 .tittopicos{
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
@@ -37,19 +43,50 @@ body{
     background-color: #F97B22;
 }
 
+.sliderSobre{
+    width: 575px;
+    height: 297px;
+    overflow: hidden;
+    position: relative;
+}
+.sliderSobre{
+    width: 575px;
+    height: 297px;
+    overflow: hidden;
+    position: relative;
+}
+  
 .imgtopicos{
-    width: 2000px;
-    height: 250px;
-    overflow: hidden;   
-}
-
-.imgtopicos .ftopicos{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 297px;
+    display: flex;
+}
+  
+.fNossaHistoria, .fNossosValores {
+    width: 100%;
+    height: 297px;
     border-radius: 35px;
+    position: absolute;
+    transition: transform 0.5s ease;
 }
 
+.bolas {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.bolaH, .bolaV {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #E1E5EE;
+    margin: 0 5px;
+}
 .txttopicos{
     margin: 0 40px 0 40px;
 }
@@ -59,8 +96,9 @@ body{
     margin: 50px 98px 50px 71px;
 }
 
+/* PRINCIPAL */
 #principal{
-    background-image: url(../imgs/Foto03.jpg);
+    background-image: url(../../img/sobre/NossaEquipe.jpg);
     height: 350px;
     background-size: cover;
     background-position: center top;
@@ -155,6 +193,7 @@ a{
     align-items: center;
 }
 
+/* NOSSA EQUIPE */
 .equipe {
     background-color: #F97B22;
     height: 803px;
@@ -263,5 +302,291 @@ a{
     .equipe{
         height: 1200px;
         max-width: 1298px;
+    }
+}
+
+/* FIM DO CSS DESKTOP */
+
+/* CSS MOBILE */
+
+@media screen and (max-width:1023){
+
+    .sobreGrande{
+        display: none;
+    }
+    .sobrePequena{
+        display: block;
+    }
+    body{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    /*INÍCIO DOS TÓPICOS*/
+    .tittopicos{
+        color: #262626;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29.26px;
+        text-align: left;
+        margin: 25px 0;
+    }
+
+    .stittopicos{
+        font-family: 'Montserrat';
+        font-weight: 400;
+        color: #262626;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        margin: 25px 0;
+    }
+
+    .destacada{
+        position: relative;
+    }
+
+    .destacada::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 3px;
+        background-color: #F97B22;
+    }
+
+    .sliderSobre{
+        width: 100%;
+        height: 168px;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 29px 0 29px;
+    }
+    
+    .imgtopicos{
+        width: 100%;
+        height: 168px;
+        display: flex;
+    }
+    
+    .fNossaHistoria, .fNossosValores {
+        height: 168px;
+        border-radius: 15px;
+        position: absolute;
+        transition: transform 0.5s ease;
+        width: 100%;
+    }
+
+    .bolas {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .bolaH, .bolaV {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: #E1E5EE;
+        margin: 0 3.75px;
+    }
+
+    .txttopicos{
+        margin: 0 29px 0 29px;
+    }
+
+    .topicos{
+        max-width: 1023px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*FIM DOS TÓPICOS*/
+
+    /*INÍCIO DO PRINCIPAL*/
+
+    #principal{
+        background-image: url(../imgs/NossaEquipe.jpg);
+        background-size: cover;
+        background-position: right top;
+        position: relative;
+        color: #F1F1F1;
+        border-radius: 30px;
+        margin: 0 29px 0 29px;
+        padding: 80px 20px;
+    }
+
+    #principal::before {
+        content: "";
+        position: absolute;
+        top: 0; /*Garante que a parte escura esteja "presa" na parte de cima*/
+        left: 0; /*Garante que a parte escura esteja "presa" à esquerda*/
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+        border-radius: 30px;
+        z-index: 1;
+    }
+
+    #tprincipal, #stprincipal, .btnNossaEquipe, #txtprincipal, #stxtprincipal{
+        position: relative;
+        z-index: 2;
+        color: #F1F1F1;
+    }
+
+    #txtprincipal{
+        letter-spacing: -2%;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: left;
+        margin: 0 8px 10px 0;
+    }
+
+    #stxtprincipal{
+        font-family: 'Montserrat';
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .btnNossaEquipe{
+        border-radius: 80px;
+        background-color: #F97B22;
+        border: 1px solid #F97B22;
+        letter-spacing: 0.075em;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 15px;
+        text-align: left;
+        padding: 5px 7px 5px 7px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .arrowbtn{
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 1px solid #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .arrow{
+        width: 8px;
+        height: 5px;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    /*FIM DO PRINCIPAL*/
+
+    /* INÍCIO DO NOSSA EQUIPE */
+    .equipe {
+        height: 803px;
+        max-width: 1023px;
+        margin: 60px 20px 60px 20px;
+    }
+
+    .titulo h1{
+        color:#262626;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29.26px;
+        text-align: left;
+        left: 0;
+        margin: 0 0 30px 0;
+    }
+
+    .professores{
+        height: 344px;
+        border-radius: 20px 20px 0px 0px;
+        margin: 0 65px 105px 65px;
+        display: flex;
+        align-items: center;
+    }
+
+    .membro {
+        width: 290px;
+        height: 344px;
+        border-radius: 20px 20px 0px 0px;
+        margin: 10px;
+    }
+
+    .imgperfil {
+        width: 290px;
+        height: 207.51px;
+        border-radius: 20px 20px 0px 0px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .perfil {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .nome{
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: left;
+        color: white;
+        width: 290px;
+        height: 22px;
+        margin: 15.49px 0 5px 0;
+    }
+
+    .formacao{
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        color: white;
+        width: 290px;
+        height: 20px;
+        margin-bottom: 30px;
+    }
+
+    .descricao{
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        color: white;
+        width: 290px;
+        height: 44px;
+    }
+    .textos{
+        width: 290px;
+        height: 137.49px
     }
 }
