@@ -7,7 +7,7 @@
     margin: 0;
     font-family: 'Montserrat';
 }
-
+/* CABEÇALHO E CAMPO DE BUSCA */
 body{
     overflow-x: hidden;
     width: 100vw;
@@ -29,10 +29,10 @@ body{
     line-height: 64px;
     text-align: center;
     color: #FFFFFF;
+    margin: 0 26% 0 26%;
 }
 
 .cabecalho p{ 
-    width: 358px;
     Height: 42px;
     font-family: 'DM Sans';
     font-size: 16px;
@@ -40,20 +40,17 @@ body{
     line-height: 20.83px;
     text-align: center;
     color: #FFFFFF;
-    margin: 15px 540px 35px 460px;
+    margin: 0 35.5% 0 35.5%;
 }
 
 .campoDeBusca{
-    margin: 60px 0 60px 980px;
+    width: 15%;
+    margin: 60px 10% 60px 75%;
 }
 
 .campoDeBusca input{
-    border-radius: 15px;
     border: 1px solid #262626;
-    width: 195px;
-    height: 31px;
     padding-left: 20px;
-    gap: 55px;
     border-radius: 90px;
     font-family: 'Montserrat';
     font-size: 14px;
@@ -62,90 +59,86 @@ body{
 }
 
 .campoDeBusca img{
-    margin-left: -40px;
+    margin-left: -42px;
 }
 
+/* POSTS */
 .fileira{
     display: flex;
-    margin-left: 80px;
-    margin-bottom: 70px;
-    width: 100vw;
+    width: 100%;
+    height: 513px; /* 513/2536 (medidas usadas no mockup em pixel para a altura de cada post e o da página, respectivamente)*/
 }
 
 .post{
-    width: 467px;
-    height: 513px;
-    top: 497px;
+    width: 32%;
     border-radius: 20px;
-
+    margin: 0 0 0 11%;
 }
 
 #post2{
-    margin-left: 200px;
+    margin: 0 11% 0 13%;
 }
 
 .upper{
-    width: 467px;
-    height: 270px;
+    width: 100%;
+    height: 48%; /* 270/513 */
     border-radius: 20px;
-
+    margin-bottom: 15px;
 }
 
 .upper img{
-    width: 467px;
-    height: 270px;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     object-fit: cover;
-
 }
 
 .lower{
-    width: 467px;
-    height: 243px;
+    width: 100%;
+    height: 48%; /* 243/513 */
 }
 
 .lower h3{
-    width: 460px;
-    height: 64px;
+    width: 100%;
+    height: 26%; /* 64/243 */
     font-family: 'Montserrat';
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
-    text-align: left;
-
-
+    margin-bottom: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limita a duas linhas */
+    -webkit-box-orient: vertical;
 }
 
 .lower p{
-    width: 460px;
-    height: 72px;
+    width: 100%;
+    height: 40%; /* 72/243 */
     font-family: 'DM Sans';
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    margin-top: 15px;
     text-align: justify;
-
+    margin-bottom: 40px;
 }
 
 .rodapePost{
     width: 100%;
+    height: 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 15px;
 }
 
 .rodapePost img{
     width: 20px;
     height: 20px;
     margin-right: 10px;
-
 }
 
 .rodapePost p{
     width: 181px;
-    height: 22px;
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 400;
@@ -158,7 +151,6 @@ body{
 
 .rodapePost a{
     width: 67px;
-    height: 20px;
     font-family: 'DM Sans';
     font-size: 12px;
     font-weight: 500;
@@ -168,8 +160,6 @@ body{
     text-decoration: none;
     color: black;
     margin-top: 0px;
-
-
 }
 
 .rodapeLeft{
@@ -190,12 +180,10 @@ body{
     font-weight: 500;
     line-height: 16px;
     text-align: center;
-
-
 }
 
 /* BLOG MOBILE */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1023px) {
 
     .cabecalho{
         width: 100vw;
@@ -203,14 +191,13 @@ body{
     }
 
     .cabecalho h1{
-        width: 220px;
         height: 31px;
-        margin-left: 69px;
         font-family: 'Montserrat';
         font-size: 26px;
         font-weight: 600;
         line-height: 31px;
-        text-align: left;
+        text-align: center;
+
     }
 
     .cabecalho p{
@@ -224,8 +211,8 @@ body{
     }
 
     .campoDeBusca{
-        margin: 60px 0 60px 200px;
-        width: 112px;
+        width: 15%;
+        margin: 60px 10% 60px 75%;
         height: 23px;
         border-radius: 30px;
         display: flex;
