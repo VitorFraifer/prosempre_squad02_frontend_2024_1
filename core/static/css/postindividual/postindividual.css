@@ -51,11 +51,15 @@
     }
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .banner{
 width: 1137px;
 height: 270px;
 top: 160px;
-margin-left: 152px;
+margin-left: 50px;
 gap: 0px;
 border-radius: 20px;
 opacity: 0px;
@@ -74,7 +78,7 @@ object-fit: cover;
 width: 778px;
 height: 108px;
 top: 460px;
-margin-left: 152px;
+margin-left: 50px;
 gap: 0px;
 opacity: 0px;
 
@@ -93,6 +97,7 @@ line-height: 72px;
 letter-spacing: -0.02em;
 text-align: left;
 color: #262626;
+margin-bottom: 0px;
 
 
 }
@@ -108,17 +113,20 @@ font-size: 16px;
 font-weight: 400;
 line-height: 24px;
 text-align: left;
+margin-top: 10px;
 
 }
 
 .infos{
 width: 1137px;
 height: 53px;
-margin-left: 152px;
+margin-left: 50px;
 top: 628px;
 gap: 0px;
 opacity: 0px;
 display: flex;
+margin-top: 50px;
+margin-bottom: 50px;
 
 }
 
@@ -201,7 +209,7 @@ opacity: 0px;
 width: 1117px;
 height: 260px;
 top: 741px;
-margin-left: 152px;
+margin-left: 50px;
 gap: 0px;
 opacity: 0px;
 font-family: Montserrat;
@@ -222,7 +230,7 @@ text-align: justified;
 width: 620px;
 height: 312px;
 top: 1027px;
-margin-left: 152px;
+margin-left: 50px;
 gap: 0px;
 opacity: 0px;
 font-family: Montserrat;
@@ -251,7 +259,7 @@ margin-left: 30px;
 width: 1117px;
 height: 260px;
 top: 1365px;
-margin-left: 152px;
+margin-left: 50px;
 gap: 0px;
 opacity: 0px;
 font-family: Montserrat;
@@ -263,76 +271,15 @@ color: black
 
 }
 
-.footer{
-    box-sizing: border-box;
-    letter-spacing: 1%;
-    width: 100%;
-    background-color: #F97B22;
-    font-family: 'Montserrat';
-    padding: 38px 135px 33px 135px;
-    border: 2px solid #F97B22;
-}
-
-.footerLogo{
-    overflow: hidden;
-    width: 216px;
-    height: 82px;
-}
-
-.footerLogo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.blocoFooter{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.footer_contatos .FAQ .centralAjuda{
-    margin-bottom: 13px;
-}
-
-.footer_contatos li, .FAQ li, .centralAjuda li{
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    list-style: none;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    color: #262626;
-}
-
-.primeiro{
-    font-size: 16px;
-    font-weight: 700;
-    text-align: left;
-}
-
-.footer_contatos li{
-    margin-bottom: 13px;
-}
-
-.redesSociais{
-    display: flex;
-    gap: 1.5rem;
-    margin: 2px 0 24px 0;
-}
-
-.FAQ li, .centralAjuda li{
-    margin-bottom: 13px;
-}
-
-.copyright{
-    margin-left: 40px;
-    color: #262626;
-}
-
 @media screen and (max-width: 600px) {
 
+    .footer{
+        margin-top: 600px;
+    }
+
+    body{
+        overflow-x: none;
+    }
 
     .banner{
 
@@ -343,7 +290,7 @@ color: black
         gap: 0px;
         border-radius: 15px;
         opacity: 0px;
-        margin-left: 0px;
+        margin-left: 19px;
 
     }
 
@@ -358,6 +305,7 @@ color: black
     }
 
     .headline{
+        width: 302px;
         margin-left: 19px;
         
     }
@@ -365,22 +313,21 @@ color: black
 
     .titulo{
         width: 302px;
-        height: 50px;
+        height: 20px;
         top: 239px;
-        left: 29px;
-        gap: 0px;
         opacity: 0px;
         font-family: Montserrat;
         font-size: 20px;
         font-weight: 600;
         line-height: 25px;
         text-align: left;
-        color: black 
-
+        color: black; 
+        margin-bottom: 10px;
 
     }
 
     .subtitulo{
+        margin-top: 0px;
         width: 280px;
         height: 34px;
         top: 299px;
@@ -398,10 +345,11 @@ color: black
     }
 
     .infos{
-        width: 302px;
+        width: 100vw;
         height: 31px;
         margin-left: 19px;
-        margin-top: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px
         
     }
 
@@ -435,7 +383,7 @@ color: black
     }
 
     .datahora{
-        width: 89px;
+        width: 100px;
         height: 11px;
         top: 373px;
         left: 29px;
@@ -462,13 +410,19 @@ color: black
     }
 
     .redesocialimg{
-        width: 25px;
-        height: 25px;
+        width: 16px;
+        height: 16px;
         top: 353px;
         left: 253px;
         gap: 0px;
         opacity: 0px;
+        margin-right: 8px;
 
+    }
+
+    .compartilhar{
+        display: flex;
+        justify-content: end;
     }
 
     .firstparagrafo{
