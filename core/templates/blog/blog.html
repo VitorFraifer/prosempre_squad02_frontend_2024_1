@@ -5,46 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../static/css/footer.css">
     <link rel="stylesheet" href="../../static/css/blog/blog.css">
-    <link rel="stylesheet" href="../../static/css/navbar.css">
     <title>Blog</title>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <div class="navGrande">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="../../static/img/blog/Icons/Logo.png" alt="Logo Mani Cursos">
-            </div>
-            <div class="separator"></div>
-            <ul class="nav-links">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">SOBRE</a></li>
-                <li><a href="#">CURSOS</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTATO</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- <div class="navPequena">
-        <div class="navbar">
-            <div class="burger-menu" id="burger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <img src="../imgs/Icons/Logo.png" alt="Logo" class="logo">
-            <div class="menu" id="menu">
-                <a href="#">Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Cursos</a>
-                <a href="#">Blog</a>
-                <a href="#">Contato</a>
-            </div>
-        </div>
-    
-        <script src="../js/NavBurger.js"></script> -->
-    <!-- FIM DO NAVBAR -->
 <!-- CABEÇALHO E CAMPO DE BUSCA -->
 
 <div class="cabecalho">
@@ -53,10 +16,13 @@
         iusto aut accusamus voluptatem.</p>
 </div>
 
-<div class="campoDeBusca">
-    <input type="text" placeholder="Buscar curso">
-    <img src="../../static/img/blog/Icons/Lupa.png" alt="" >
-</div>
+<form action="{% url 'buscar_noticia' %}">
+    <div class="campoDeBusca">
+        <input type="text" placeholder="Buscar cursos" name="buscar">
+        <img src="../../static/img/Icons/Lupa.png" alt="" >
+        <button type="submit"></button>
+    </div>
+</form>
 
 <!-- POSTS -->
 <!--Fileira 1-->
@@ -73,7 +39,7 @@
             </p>
                 <div class="rodapePost">
                     <div class="rodapeLeft">
-                        <img src="../../static/img/blog/Icons/Coração.png" alt="imagem Coração">
+                        <img src="../../static/img/Icons/Coração.png" alt="imagem Coração">
                         <p>10 de Outubro de 2023</p>
                     </div>
                     <a href="#">Ler mais</a>
@@ -91,7 +57,7 @@
                 eligendi quod ut voluptatem iure ut voluptas eveniet.’</p>
                 <div class="rodapePost">
                     <div class="rodapeLeft">
-                        <img src="../../static/img/blog/Icons/Coração.png" alt="imagem Coração">
+                        <img src="../../static/img/Icons/Coração.png" alt="imagem Coração">
                         <p>10 de Outubro de 2023</p>
                     </div>
                     <a href="#">Ler mais</a>
@@ -114,7 +80,7 @@
             </p>
                 <div class="rodapePost">
                     <div class="rodapeLeft">
-                        <img src="../../static/img/blog/Icons/Coração.png" alt="imagem Coração">
+                        <img src="../../static/img/Icons/Coração.png" alt="imagem Coração">
                         <p>10 de Outubro de 2023</p>
                     </div>
                     <a href="#">Ler mais</a>
@@ -133,7 +99,7 @@
                 eligendi quod ut voluptatem iure ut voluptas eveniet.</p>
                 <div class="rodapePost">
                     <div class="rodapeLeft">
-                        <img src="../../static/img/blog/Icons/Coração.png" alt="imagem Coração">
+                        <img src="../../static/img/Icons/Coração.png" alt="imagem Coração">
                         <p>10 de Outubro de 2023</p>
                     </div>
                     <a href="#">Ler mais</a>
@@ -174,7 +140,7 @@
                 eligendi quod ut voluptatem iure ut voluptas eveniet.’</p>
                 <div class="rodapePost">
                     <div class="rodapeLeft">
-                        <img src="../../static/img/blog/Icons/Coração.png" alt="imagem Coração">
+                        <img src="../../static/img/Icons/Coração.png" alt="imagem Coração">
                         <p>10 de Outubro de 2023</p>
                     </div>
                     <a href="#">Ler mais</a>
@@ -182,56 +148,7 @@
         </div>
     </div>
 </div>
-<!-- <script src="../../static/js/blog/CortaTexto.js"></script> -->
 <button class="btnCarregarMais">Carregar Mais</button>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="footerLogo">
-        <img src="../../static/img/sobre/Icons/Logo.png" alt="Logo Mani Cursos">
-    </div>
-    <div class="blocoFooter">
-        <div class="footer_contatos">
-            <ul>
-                <li class="primeiro"><h3>Entre em contato</h3></li>
-                <li>contato@manicursos.com.br</li>
-                <li>+1-2345-6789</li>
-                <li>23 Cornelia St, NY 10014, EUA</li>
-                <li>
-                    <div class="redesSociais">
-                        <img src="../../static/img/sobre/Icons/Facebook.png" alt="facebook">
-                        <img src="../../static/img/sobre/Icons/Linkedin.png" alt="linkedin">
-                        <img src="../../static/img/sobre/Icons/Twitter.png" alt="twitter">
-                        <img src="../../static/img/sobre/Icons/Instagram.png" alt="instagram">
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="FAQ">
-            <ul>
-                <li class="primeiro"><h3>FAQ</h3></li>
-                <li>Auctor volutpat.</li>
-                <li>Fermentum turpis.</li>
-                <li>Mi consequat.</li>
-                <li>Amet venenatis.</li>
-                <li>Convallis porttitor.</li>
-            </ul>
-        </div>
-        <div class="centralAjuda">
-            <ul>
-                <li class="primeiro"><h3>Central de Ajuda</h3></li>
-                <li>Egestas vitae.</li>
-                <li>Viverra lorem ac.</li>
-                <li>Eget ac tellus.</li>
-                <li>Erat nulla.</li>
-                <li>Vulputate proin.</li>
-            </ul>
-        </div>
-    </div>
-    <div class="copyright"> 
-        Copyright © 2023. All rights reserved.
-    </div>
-</footer>
-<!-- FIM FOOTER -->
 </body>
 </html>

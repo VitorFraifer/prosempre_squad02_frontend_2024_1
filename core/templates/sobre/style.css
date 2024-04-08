@@ -1,0 +1,370 @@
+body{
+    overflow-x: none;
+  }
+  
+  .cabeçalho{
+      width: 570px;
+      height: 41px;
+      font-family: DM Sans;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 41px;
+      text-align: left;
+      margin-left: 72px;
+  
+  }
+  
+  .cursosPopulares{
+      width: 1256px;
+      height: 607px;
+  
+  }
+  
+  #cabeçalho{
+      font-size: 48px;
+      letter-spacing: 2px;
+  }
+  
+  .cards{
+      padding-top: 75px;
+      display: flex;
+  }
+  
+  .cardCurso{
+      width: 352px;
+      height: 486px;
+      margin-left: 73px;
+      border-radius: 20px;
+  }
+  
+  .cardupper{
+      width: 352px;
+      height: 273px;
+  }
+  
+  .cardlower{
+      width: 352px;
+      height: 213px;
+  }
+  
+  .cursosImg{
+      width: 352px;
+      height: 273px;
+      object-fit: cover;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+  }
+  
+  .cursoName{
+      width: 284px;
+      height: 32px;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      text-align: left;
+  
+  }
+  
+  .estrelaImg{
+      width: 14px;
+      height: 14px;
+      margin-left: 10px;
+  }
+  
+  .notaAvaliação{
+      width: 26px;
+      height: 15px;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.63px;
+      text-align: left;
+      margin-left: 9px;
+  
+  }
+  
+  .dadosgerais{
+      margin-bottom: 10px;
+  }
+  
+  .dadosCargaHoraria{
+      width: 331px;
+      height: 24px;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      margin-bottom: 10px;
+  
+  }
+  
+  .descricaoCurso{
+      width: 348px;
+      height: 54px;
+      font-family: DM Sans;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18.23px;
+      text-align: left;
+      color: #787878;
+  }
+  
+  .verMais{
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .preco{
+      width: 130px;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+  
+  }
+  
+  .parcelado{
+      width: 125px;
+      height: 22px;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 22px;
+      text-align: left;
+  
+  }
+  
+  .avista{
+      width: 94px;
+      height: 18px;
+      font-family: Montserrat;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+      color: #787878;
+  
+  
+  }
+  
+  .verMaisBtn{
+      width: 107px;
+      height: 40px;
+      padding: 12px 16px 12px 16px;
+      gap: 12px;
+      border-radius: 90px;
+      background-color: #F97B22;
+      border: none;
+      color: white;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      text-align: center;
+  
+  }
+  
+  
+  
+  @media only screen and (max-width: 768px){
+  .cards{
+          padding-top: 30px;
+          margin-left: -45px;
+      }
+  
+      .fileira{
+          display: flex;
+          width: 504px;
+          height: 224px;
+          margin-left: -72px;
+      }
+      .banner{
+          width: 160px;
+          height: 209.54px;
+          border-radius: 35px;
+  
+      }
+      .banner2{
+          width: 160px;
+          height: 209.54px;
+          border-radius: 35px;
+  
+      }
+      .cursosPopulares{
+          width: 290px;
+          height: 418px;
+          left: 29px;
+  
+      }
+  
+      .setaCarrosselMobile{
+          display: block;
+          width: 25px;
+          height: 25px;
+          left: 46px;
+          background-color: #F97B22;
+          text-align: center;
+          border: none;
+          border-radius: 50%;
+          color: white;
+      }
+  
+      #mobileNone{
+          display: none;
+      }
+  
+      .cabeçalho{
+          width: 320px;
+          height: 41px;
+          margin-left: 29px;
+          font-family: Montserrat;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 41px;
+          text-align: left;
+  
+      }
+  
+      #cabeçalho{
+          width: 290px;
+          height: 41px;
+          left: 29px;
+          font-family: Montserrat;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 41px;
+          text-align: left;
+  
+      }
+  
+      .sublinhado{
+          font-family: Montserrat;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 41px;
+          text-align: left;
+      }
+  
+      .cardCurso{
+          width: 255px;
+          height: 347px;
+          margin-left: 0px;
+  
+      }
+  
+      .cardupper{
+          width: 229px;
+          height: 167px;
+          margin-left: 59px;
+  
+      }
+  
+      .cursosImg{
+          width: 229px;
+          height: 167px;
+      }
+  
+      .cardlower{
+          width: 229px;
+          height: 180px;
+          margin-left: 59px;
+      }
+  
+      .dadosgerais{
+          display: flex;
+          align-items: center;
+          margin-bottom: 3px;
+      }
+  
+      .cursoName{
+          width: 199px;
+          height: 28px;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 27.5px;
+          text-align: left;
+  
+      }
+  
+      .estrelaImg{
+          margin-left: 0px;
+      }
+  
+      .notaAvaliação{
+          margin-left: 0px;
+      }
+  
+      .dadosCargaHoraria{
+          width: 228px;
+          height: 16px;
+          font-family: Montserrat;
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 16px;
+          text-align: left;
+  
+      }
+  
+      .descricaoCurso{
+          width: 229px;
+          height: 68px;
+          font-family: Montserrat;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 17px;
+          text-align: left;
+          margin-bottom: 20px;
+  
+      }
+  
+      .preco{
+          width: 118px;
+          height: 37px;
+  
+      }
+  
+      .parcelado{
+          width: 118px;
+          height: 19px;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 19px;
+          text-align: left;
+  
+      }
+  
+      .avista{
+          width: 100px;
+          height: 15px;
+          font-family: Montserrat;
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 15px;
+          text-align: left;
+  
+      }
+  
+      .verMaisBtn{
+          width: 74px;
+          height: 29px;
+          padding: 8px 10px 8px 10px;
+          border-radius: 90px;
+          font-size: 11px;
+          font-weight: 700;
+          line-height: 16px;
+          text-align: center;
+  
+      }
+  
+      #setaCarrosselMobileEsquerda{
+          transform: translateY(-227px);
+          margin-left: 0px;
+      }
+      #setaCarrosselMobileDireita{
+          transform: translateY(-252px);
+          margin-left: 230px;
+      }
+  }
